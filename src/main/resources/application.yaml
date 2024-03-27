@@ -4,7 +4,7 @@ spring:
   application:
     name: VKBackendTest
   datasource:
-    url: jdbc:postgresql://localhost:5432/vk_test
+    url: jdbc:postgresql://postgres:5432/vk_test
     driverClassName: org.postgresql.Driver
     username: "admin"
     password: "admin"
