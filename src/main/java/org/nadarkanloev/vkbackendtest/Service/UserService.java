@@ -56,6 +56,6 @@ public class UserService {
      * @return
      */
     public UserDetailsService userDetailsService(){
-        return this::getById;
+        return this::getByEmail;
     }
 }

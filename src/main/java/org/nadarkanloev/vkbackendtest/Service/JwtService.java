@@ -28,7 +28,7 @@ public class JwtService {
      * @param token токен
      * @return имя пользователя
      */
-    public String extractId(String token){
+    public String extractEmail(String token){
         return extractClaim(token, Claims::getSubject);
     }
 
@@ -42,6 +42,7 @@ public class JwtService {
         Map<String, Object> claims = new HashMap<>();
         if(userDetails instanceof User customUserDetails){
             claims.put("id", customUserDetails.getId());
+            claims.put("email", customUserDetails.getEmail());
         }
         return generateToken(claims, userDetails);
     }
@@ -54,7 +55,7 @@ public class JwtService {
      * @return true, если токен валиден
      */
     public boolean isTokenValid(String token, UserDetails userDetails){
-        final String userName = extractId(token);
+        final String userName = extractEmail(token);
         return (userName.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 

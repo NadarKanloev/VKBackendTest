@@ -40,13 +40,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
         var jwt = authHeader.substring(BEARER_PREFIX.length());
-        var id = jwtService.extractId(jwt);
+        var email = jwtService.extractEmail(jwt);
 
-        if(StringUtils.isNotEmpty(id) && SecurityContextHolder.getContext().getAuthentication() == null){
+        if(StringUtils.isNotEmpty(email) && SecurityContextHolder.getContext().getAuthentication() == null){
             UserDetails userDetails = userService
                     .userDetailsService()
-                    .loadUserByUsername(id);
-            log.info(userService.userDetailsService().loadUserByUsername(id));
+                    .loadUserByUsername(email);
+            log.info(userService.userDetailsService().loadUserByUsername(email));
 
             if(jwtService.isTokenValid(jwt, userDetails)){
                 SecurityContext context = SecurityContextHolder.createEmptyContext();
