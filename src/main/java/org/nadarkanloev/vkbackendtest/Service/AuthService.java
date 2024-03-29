@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.nadarkanloev.vkbackendtest.DTO.JwtAuthenticationResponse;
 import org.nadarkanloev.vkbackendtest.DTO.SignUpRequest;
+import org.nadarkanloev.vkbackendtest.Exception.NotValidEmailException;
 import org.nadarkanloev.vkbackendtest.Exception.WeakPasswordException;
 import org.nadarkanloev.vkbackendtest.Model.User;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -11,6 +12,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 @Service
@@ -30,6 +33,7 @@ public class AuthService {
      */
     public String signUp(SignUpRequest signUpRequest){
         String checkPassword = checkPasswordStrength(signUpRequest.getPassword());
+        validateEmail(signUpRequest.getEmail());
         var user = User.builder()
                 .email(signUpRequest.getEmail())
                 .password(passwordEncoder.encode(signUpRequest.getPassword()))
@@ -37,8 +41,7 @@ public class AuthService {
         log.info(user.getPassword());
         userService.create(user);
         log.info("Создан пользователь " + user.getEmail() + " с айди" + user.getId());
-        String response = user.getId() + " " + checkPassword;
-        return response;
+        return user.getId() + " " + checkPassword;
     }
 
     /**
@@ -63,7 +66,7 @@ public class AuthService {
         var jwt = jwtService.generateToken(user);
         return new JwtAuthenticationResponse(jwt);
     }
-    public String checkPasswordStrength(String password){
+    private String checkPasswordStrength(String password){
         if(password.length() < 8){
             throw new WeakPasswordException("Weak Password");
         }
@@ -84,6 +87,14 @@ public class AuthService {
         }else {
             throw new WeakPasswordException("Weak Password");
         }
-
+    }
+    private static void validateEmail(String email){
+        final String EMAIL_REGEX =
+                "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        final Pattern pattern = Pattern.compile(EMAIL_REGEX);
+        Matcher matcher = pattern.matcher(email);
+        if(!matcher.matches()){
+            throw new NotValidEmailException("Невалидная почта");
+        }
     }
 }
