@@ -18,4 +18,4 @@
 2. Клонируйте репозиторий на свой компьютер:
 
 ```bash
-git clone https://github.com/ваш_локальный_путь
+git clone https://github.com/NadarKanloev/VKBackendTest
