@@ -60,7 +60,7 @@ docker-compose up
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/53d3bb53-fa9c-4b1b-985d-99e872dce1d7)
 Вход в систему
 
-![Снимок экрана 2024-03-30 231229](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/35bde527-290e-41f5-9a28-16f9c36d1bb1)
+![Снимок экрана 2024-03-31 000115](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/528debe1-61d9-4983-9e9d-9d62bd53f2c0)
 Данные в токене
 
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/ad08ff4a-f90e-4be4-9a1f-6cf24887272b)
