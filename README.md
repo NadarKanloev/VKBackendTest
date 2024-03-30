@@ -26,6 +26,7 @@ git clone https://github.com/NadarKanloev/VKBackendTest
 docker-compose up
 ```
 ## [Ссылка на коллекцию запросов Postman](https://www.postman.com/restless-escape-517248/workspace/habraggreagot/collection/27427106-ad1282f3-58a6-4432-b60b-7a7a5596d186?action=share&creator=27427106)
+## [Ссылка на образ программы в DockerHub](https://hub.docker.com/repository/docker/veventumt/vkbackendtest/general)
 
 # Валидация пароля
 
