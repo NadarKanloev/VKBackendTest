@@ -8,3 +8,14 @@
 - Spring (Core, Data JPA, Security)
 - PostgreSQL
 - JWT (JSON Web Token)
+
+## Использование
+
+Для запуска проекта с использованием Docker-compose выполните следующие шаги:
+
+1. Убедитесь, что у вас установлен Docker и Docker-compose.
+
+2. Клонируйте репозиторий на свой компьютер:
+
+```bash
+git clone https://github.com/ваш_локальный_путь
