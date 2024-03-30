@@ -8,6 +8,7 @@
 - Spring (Core, Data JPA, Security)
 - PostgreSQL
 - JWT (JSON Web Token)
+- Docker
 
 ## Использование
 
