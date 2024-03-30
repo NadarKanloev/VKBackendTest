@@ -62,3 +62,5 @@ docker-compose up
 ![Снимок экрана 2024-03-30 231229](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/35bde527-290e-41f5-9a28-16f9c36d1bb1)
 Данные в токене
 
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/ad08ff4a-f90e-4be4-9a1f-6cf24887272b)
+Вход в `/feed` с токеном
