@@ -20,3 +20,7 @@
 ```bash
 git clone https://github.com/NadarKanloev/VKBackendTest
 ```
+3. Зайдите в директорию проекта и используйте команду
+```
+docker-compose up
+```
