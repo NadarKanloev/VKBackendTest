@@ -57,10 +57,10 @@ docker-compose up
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/9efb1a8a-8adc-4e4c-96e7-9696289579a7)
 Попытка создать пользователя со слабым паролем
 
-![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/53d3bb53-fa9c-4b1b-985d-99e872dce1d7)
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/a1696102-3e2a-4f08-9787-9be228abb257)
 Вход в систему
 
-![Снимок экрана 2024-03-31 000115](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/528debe1-61d9-4983-9e9d-9d62bd53f2c0)
+![Снимок экрана 2024-03-31 195415](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/76020367-7233-45f8-96fc-ff017255a358)
 Данные в токене
 
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/ad08ff4a-f90e-4be4-9a1f-6cf24887272b)
