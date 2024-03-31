@@ -48,13 +48,13 @@ docker-compose up
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/96b2ddbf-d86f-490f-9625-8f9f20b36528)
 Создание пользователя с идеальным паролем
 
-![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/6c1a714b-bfaa-421f-8618-9780121932c1)
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/520d51d1-8671-4e72-b13b-8da41c20a936)
 Создание пользователя с уже существующим в БД адресом электронной почты
 
-![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/955bbd72-c7d3-495a-a47e-cedc10eedf98)
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/c2fd792b-8b4b-4c0c-936c-aa469aa57712)
 Попытка создать пользователя с слишком коротким паролем
 
-![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/07c1b7ce-cbb1-40b0-8ba5-11f6fbdfbb0d)
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/9efb1a8a-8adc-4e4c-96e7-9696289579a7)
 Попытка создать пользователя со слабым паролем
 
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/53d3bb53-fa9c-4b1b-985d-99e872dce1d7)
