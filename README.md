@@ -65,3 +65,6 @@ docker-compose up
 
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/ad08ff4a-f90e-4be4-9a1f-6cf24887272b)
 Вход в `/feed` с токеном
+
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/e2dddbf2-a2bb-4430-8fe5-1927ba400b3f)
+Попытка входа в `/feed` без токена
