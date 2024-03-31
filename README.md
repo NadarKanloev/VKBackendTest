@@ -45,7 +45,7 @@ docker-compose up
 - При попытке создания пользователя с email, который уже используется другим пользователем, триггерится исключение `UserAlreadyExist`.
 
 # Демонстрация работы
-![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/4135c52b-1c71-435c-a6bb-858bb233b9ca)
+![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/96b2ddbf-d86f-490f-9625-8f9f20b36528)
 Создание пользователя с идеальным паролем
 
 ![image](https://github.com/NadarKanloev/VKBackendTest/assets/44449982/6c1a714b-bfaa-421f-8618-9780121932c1)
