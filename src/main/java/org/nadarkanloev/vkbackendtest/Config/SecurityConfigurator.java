@@ -68,6 +68,7 @@ public class SecurityConfigurator {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
     /**
      * Провайдер аутентификации.
      *

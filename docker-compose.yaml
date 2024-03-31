@@ -11,7 +11,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
   vktest:
-    image: veventumt/vkbackendtest:0.0.2
+    image: veventumt/vkbackendtest:0.0.4
     ports:
       - "8081:8081"
     depends_on:
